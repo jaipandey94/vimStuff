@@ -1,7 +1,10 @@
 require("plugins")
-require("nvim-treesitter-config")
 require("whichkey")
+require("nvim-treesitter-config")
+require("undotree-config")
+require("harpoon-config")
 require("mason").setup()
+require("lsp-config")
 vim.wo.relativenumber = true
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
