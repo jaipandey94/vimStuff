@@ -11,3 +11,4 @@ vim.opt.termguicolors = true
 vim.cmd.nnoremap("<C-d>", "<C-d>zz")
 vim.cmd.nnoremap("<C-u>", "<C-u>zz")
 
+vim.keymap.set("n", "<C-f>", "/")
