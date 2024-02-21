@@ -60,6 +60,9 @@ return packer.startup(function(use)
 	}
 	use("williamboman/mason.nvim")
 	use ("ranjithshegde/ccls.nvim")
+	use("folke/tokyonight.nvim")
+	use("nvim-treesitter/playground")
+	use("marko-cerovac/material.nvim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
