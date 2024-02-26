@@ -37,8 +37,9 @@ return packer.startup(function(use)
 	-- whichkey
 	use("folke/which-key.nvim")
 	use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
-	use("nvim-telescope/telescope.nvim")
+	-- use("nvim-telescope/telescope.nvim")
 	use("nvim-treesitter/nvim-treesitter")
+	use("ibhagwan/fzf-lua")
 	use("ThePrimeagen/harpoon", {branch = "harpoon2"})
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
@@ -60,9 +61,6 @@ return packer.startup(function(use)
 	}
 	use("williamboman/mason.nvim")
 	use ("ranjithshegde/ccls.nvim")
-	use("folke/tokyonight.nvim")
-	use("nvim-treesitter/playground")
-	use("marko-cerovac/material.nvim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

@@ -6,4 +6,4 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').clangd.setup({})
-
+require('lspconfig').jedi_language_server.setup({})
