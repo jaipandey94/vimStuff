@@ -90,13 +90,6 @@ local mappings = {
   ["e"] = { "<cmd>Explore<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["f"] = {
-    "<cmd>FzfLua files<CR>",
-    "Find files",
-  },
-  ["F"] = { "<cmd>FzfLua live_grep<cr>", "Find Text" },
-  ["G"] = { "<cmd>FzfLua grep<cr>", "Find Text" },
-  ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
   -- Packer
   p = {
