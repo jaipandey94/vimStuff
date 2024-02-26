@@ -95,6 +95,7 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>FzfLua live_grep<cr>", "Find Text" },
+  ["G"] = { "<cmd>FzfLua grep<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
   -- Packer
