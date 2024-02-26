@@ -13,6 +13,7 @@ vim.cmd.nnoremap("<C-u>", "<C-u>zz")
 vim.cmd.nnoremap("<C-z>", "u")
 
 vim.keymap.set("n", "u", "<Nop>")
+vim.keymap.set("n", " ", "<Nop>")
 vim.keymap.set("n", "<leader>f", "<CMD>FzfLua files<CR>")
 vim.keymap.set("n", "<leader>F", "<CMD>FzfLua live_grep<CR>")
 vim.keymap.set("n", "<leader>G", "<CMD>FzfLua grep<CR>")
