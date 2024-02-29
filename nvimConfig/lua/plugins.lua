@@ -61,6 +61,7 @@ return packer.startup(function(use)
 	}
 	use("williamboman/mason.nvim")
 	use ("ranjithshegde/ccls.nvim")
+	use("joshdick/onedark.vim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
