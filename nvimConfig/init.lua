@@ -25,3 +25,5 @@ vim.keymap.set("v", "Y", "\"+y$")
 vim.keymap.set("v", "dd", "\"+dd")
 vim.keymap.set("v", "D", "\"+D")
 vim.keymap.set("v", "x", "\"+x")
+vim.opt["tabstop"] = 4
+vim.opt["shiftwidth"] = 4
