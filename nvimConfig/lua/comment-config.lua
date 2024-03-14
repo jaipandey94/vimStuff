@@ -9,5 +9,5 @@ require('Comment').setup(
     sticky = true,
     ---Lines to be ignored while (un)comment
     ignore = nil,
-	post_hook = reselect_last_selection,
+	-- post_hook = reselect_last_selection,
 })
