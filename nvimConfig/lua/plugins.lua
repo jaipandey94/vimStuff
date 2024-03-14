@@ -39,6 +39,11 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
 	-- use("nvim-telescope/telescope.nvim")
 	use("nvim-treesitter/nvim-treesitter")
+	use({
+	  "nvim-treesitter/nvim-treesitter-textobjects",
+	  after = "nvim-treesitter",
+	  requires = "nvim-treesitter/nvim-treesitter",
+	})
 	use("ibhagwan/fzf-lua")
 	use("ThePrimeagen/harpoon", {branch = "harpoon2"})
 	use("mbbill/undotree")
@@ -48,8 +53,8 @@ return packer.startup(function(use)
 	  branch = 'v3.x',
 	  requires = {
 	    --- Uncomment the two plugins below if you want to manage the language servers from neovim
-	    -- {'williamboman/mason.nvim'},
-	    -- {'williamboman/mason-lspconfig.nvim'},
+	    {'williamboman/mason.nvim'},
+	    {'williamboman/mason-lspconfig.nvim'},
 
 	    -- LSP Support
 	    {'neovim/nvim-lspconfig'},
@@ -62,6 +67,7 @@ return packer.startup(function(use)
 	use("williamboman/mason.nvim")
 	use ("ranjithshegde/ccls.nvim")
 	use("joshdick/onedark.vim")
+	use("numToStr/Comment.nvim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

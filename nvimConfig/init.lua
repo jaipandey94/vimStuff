@@ -1,5 +1,6 @@
 require("plugins")
 require("whichkey")
+require("comment-config")
 require("nvim-treesitter-config")
 require("nvim-treesitter.install").compilers = {"clang"}
 require("undotree-config")
@@ -20,10 +21,5 @@ vim.keymap.set("n", "<leader>F", "<CMD>FzfLua live_grep<CR>")
 vim.keymap.set("n", "<leader>G", "<CMD>FzfLua grep<CR>")
 vim.keymap.set("v", "<leader>F", "<CMD>FzfLua grep_visual<CR>")
 vim.keymap.set("v", "y", "\"+y")
-vim.keymap.set("v", "yy", "\"+yy")
-vim.keymap.set("v", "Y", "\"+y$")
-vim.keymap.set("v", "dd", "\"+dd")
-vim.keymap.set("v", "D", "\"+D")
-vim.keymap.set("v", "x", "\"+x")
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
+vim.opt["tabstop"]=4
+vim.opt["shiftwidth"]=4

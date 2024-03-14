@@ -13,10 +13,10 @@ configs.setup {
 	incremental_selection = {
 		enable = true,
 		keymaps = {
-		init_selection = "gnn", 
-		node_incremental = "grn",
-		scope_incremental = "grc", 
-		node_decremental = "grm", 
+		init_selection = "<leader><C-f>", 
+		node_incremental = "<leader><C-f>",
+		scope_incremental = "<leader><C-g>", 
+		node_decremental = "<leader><C-d>", 
 		},
 	}
 }
