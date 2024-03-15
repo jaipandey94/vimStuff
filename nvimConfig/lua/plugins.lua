@@ -68,6 +68,13 @@ return packer.startup(function(use)
 	use ("ranjithshegde/ccls.nvim")
 	use("joshdick/onedark.vim")
 	use("numToStr/Comment.nvim")
+	use {
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
