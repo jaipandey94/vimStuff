@@ -6,6 +6,7 @@ configs.setup {
 	ensure_installed = {"c", "cpp", "python", "lua", },
 	highlight = {
 	enable = true, -- false will disable the whole extension
+	disable = {"vimdoc"},
 	additional_vim_regex_highlighting = true,
 
 	},
