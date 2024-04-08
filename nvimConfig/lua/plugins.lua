@@ -75,6 +75,7 @@ return packer.startup(function(use)
 			require("nvim-autopairs").setup {}
 		end
 	}
+	use ("ellisonleao/glow.nvim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

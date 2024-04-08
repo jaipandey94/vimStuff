@@ -19,7 +19,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'clangd', 'lua_ls', 'pyright'},
+  ensure_installed = {'clangd', 'lua_ls', 'pyright', 'marksman'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()

@@ -5,6 +5,7 @@ require("nvim-treesitter-config")
 require("nvim-treesitter.install").compilers = {"clang"}
 require("undotree-config")
 require("harpoon-config")
+require("glow").setup()
 require("mason").setup()
 require("lsp-config")
 vim.wo.relativenumber = true
