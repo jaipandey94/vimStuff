@@ -33,3 +33,6 @@ vim.keymap.set("v", "D", "\"+D")
 vim.keymap.set("v", "x", "\"+x")
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
+vim.opt.expandtab = true
+vim.opt["listchars"] = "eol:$,tab:>-,trail:~,extends:>,precedes:<"
+vim.opt.list = true
