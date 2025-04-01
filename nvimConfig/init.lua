@@ -1,6 +1,6 @@
 require("plugins")
 require("whichkey")
--- require("comment-config")
+require("comment-config")
 require("nvim-treesitter-config")
 require("nvim-treesitter.install").compilers = { "clang" }
 require("undotree-config")
