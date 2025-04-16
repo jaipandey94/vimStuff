@@ -1,0 +1,53 @@
+{
+    "window.commandCenter": 1,
+    "vim.commandLineModeKeyBindings": [
+
+    ],
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "~/.config/nvim/init.lua",
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+
+        {
+            "before": ["<leader>", "f"],
+            "commands": [
+                "workbench.action.quickOpen",
+            ],
+            "silent": true
+        },
+        {
+            "before": ["<leader>","F"],
+            "commands": ["workbench.action.findInFiles"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+    
+        {
+            "before": ["<leader>", "f"],
+            "commands": [
+                "workbench.action.quickOpen",
+            ],
+            "silent": true
+        },
+        {
+            "before": ["<leader>","F"],
+            "commands": ["workbench.action.findInFiles"]
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "vim.enableNeovim": true,
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-w>": true,
+        "<C-d>": true,
+        "<C-u>": true,
+        "<C-b>": false,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.compositeKeys": {}
+}
