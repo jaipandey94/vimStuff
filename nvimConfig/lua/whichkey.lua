@@ -1,4 +1,4 @@
--- set leader key to spacewhich
+-- set leader key to space
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
@@ -100,10 +100,9 @@ local mappings = {
     S = { "<cmd>PackerStatus<cr>", "Status" },
     u = { "<cmd>PackerUpdate<cr>", "Update" },
   },
-  -- Git
 
-  g = {
-    name = "Git",
+  -- Git
+  g = { name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
@@ -124,7 +123,8 @@ local mappings = {
       "Diff",
     },
   },
--- Language Server Protocol (LSP)
+
+  -- Language Server Protocol (LSP)
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -156,6 +156,7 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+
   --Telescope
   s = {
     name = "Search",

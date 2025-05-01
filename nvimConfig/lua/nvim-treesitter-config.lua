@@ -10,7 +10,7 @@ configs.setup {
 	additional_vim_regex_highlighting = true,
 
 	},
-	indent = { enable = true,}, 
+	indent = { enable = false,}, 
 	incremental_selection = {
 		enable = true,
 		keymaps = {
