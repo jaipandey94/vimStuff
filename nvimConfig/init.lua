@@ -42,6 +42,30 @@ vim.opt["shiftwidth"] = 4
 vim.opt.expandtab = true
 vim.opt["listchars"] = "eol:$,tab:>-,trail:~,extends:>,precedes:<"
 vim.opt.list = true
+vim.cmd([[
+        cnoreabbrev E Explore
+        cnoreabbrev e Explore
+        cnoreabbrev W1 w!
+        cnoreabbrev w1 w!
+        cnoreabbrev Q! q!
+        cnoreabbrev Q1 q!
+        cnoreabbrev q1 q!
+        cnoreabbrev Qa! qa!
+        cnoreabbrev Qall! qall!
+        cnoreabbrev Wa wa
+        cnoreabbrev Wq wq
+        cnoreabbrev wQ wq
+        cnoreabbrev WQ wq
+        cnoreabbrev wq1 wq!
+        cnoreabbrev Wq1 wq!
+        cnoreabbrev wQ1 wq!
+        cnoreabbrev WQ1 wq!
+        cnoreabbrev W w
+        cnoreabbrev Q q
+        cnoreabbrev Qa qa
+        cnoreabbrev Qall qall
+        ]])
+
 
 -- Check if PowerShell executable is available
 local pwsh_executable = vim.fn.executable 'pwsh' == 1
