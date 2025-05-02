@@ -42,7 +42,7 @@ vim.keymap.set("v", "<C-f>", "<CMD>FzfLua lgrep_curbuf<CR>")
 
 vim.keymap.set("n", "<leader>ww", "<CMD>wa<CR>")
 vim.keymap.set("n", "<leader>wf", "<CMD>wa!<CR>")
-vim.keymap.set("n", "<leader>wq", "<CMD>waq!<CR>")
+vim.keymap.set("n", "<leader>wq", "<CMD>wqa!<CR>")
 vim.keymap.set("n", "<leader>qq", "<CMD>q<CR>")
 vim.keymap.set("n", "<leader>qf", "<CMD>q!<CR>")
 
