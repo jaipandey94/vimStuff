@@ -75,6 +75,27 @@ return packer.startup(function(use)
 			require("nvim-autopairs").setup {}
 		end
 	}
+
+    use({
+      "epwalsh/obsidian.nvim",
+      tag = "*",  -- recommended, use latest release instead of latest commit
+      requires = {
+        -- Required.
+        "nvim-lua/plenary.nvim",
+      },
+      config = function()
+        require("obsidian").setup({
+          workspaces = {
+            {
+              name = "obsidian_notes",
+              path = "~/GitRepos/obsidian_notes",
+            },
+          },
+        })
+      end,
+    })
+
+
 	use ("ellisonleao/glow.nvim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
