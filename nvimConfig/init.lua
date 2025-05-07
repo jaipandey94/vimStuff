@@ -5,12 +5,14 @@ require("nvim-treesitter-config")
 require("nvim-treesitter.install").compilers = { "clang" }
 require("undotree-config")
 require("harpoon-config")
+require("obsidian-config")
 require("glow").setup()
 require("mason").setup()
 vim.g.mapleader = " "
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 require("lsp-config")
 vim.wo.relativenumber = true
+vim.wo.conceallevel = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 -- vim.cmd("filetype indent plugin off")
@@ -50,6 +52,7 @@ vim.keymap.set("n", "<leader>wf", "<CMD>wa!<CR>")
 vim.keymap.set("n", "<leader>wq", "<CMD>waq!<CR>")
 vim.keymap.set("n", "<leader>qq", "<CMD>q<CR>")
 vim.keymap.set("n", "<leader>qf", "<CMD>q!<CR>")
+vim.keymap.set("n", "<leader>so", "<CMD>so<CR>")
 
 -- Marks
 vim.keymap.set("n", "<M-h>", "'h")
@@ -76,6 +79,11 @@ vim.opt["shiftwidth"] = 4
 vim.opt.expandtab = true
 vim.opt["listchars"] = "eol:$,tab:>-,trail:~,extends:>,precedes:<"
 vim.opt.list = true
+
+-- Obsidian Binds
+vim.keymap.set("n", "<leader>of", "<CMD>ObsidianSearch<CR>")
+vim.keymap.set("n", "<leader>ot", "<CMD>ObsidianToday<CR>")
+vim.keymap.set("n", "<leader>oy", "<CMD>ObsidianYesterday<CR>")
 
 -- Ease of life rebinds
 vim.cmd([[
@@ -115,4 +123,3 @@ vim.opt.shellredir = '2>&1 | %%{ "$_" } | Out-File %s; exit $LastExitCode'
 vim.opt.shellpipe = '2>&1 | %%{ "$_" } | tee %s; exit $LastExitCode'
 vim.opt.shellquote = ''
 vim.opt.shellxquote = ''
-

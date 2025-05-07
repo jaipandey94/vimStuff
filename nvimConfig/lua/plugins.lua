@@ -83,16 +83,6 @@ return packer.startup(function(use)
         -- Required.
         "nvim-lua/plenary.nvim",
       },
-      config = function()
-        require("obsidian").setup({
-          workspaces = {
-            {
-              name = "obsidian_notes",
-              path = "~/GitRepos/obsidian_notes",
-            },
-          },
-        })
-      end,
     })
 
 
