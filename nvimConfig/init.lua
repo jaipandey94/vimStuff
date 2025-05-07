@@ -1,5 +1,4 @@
 require("plugins")
--- require("whichkey")
 require("comment-config")
 require("nvim-treesitter-config")
 require("nvim-treesitter.install").compilers = { "clang" }
@@ -21,6 +20,7 @@ vim.opt.termguicolors = true
 vim.cmd.nnoremap("<C-d>", "<C-d>zz")
 vim.cmd.nnoremap("<C-u>", "<C-u>zz")
 vim.cmd.nnoremap("<C-z>", "u")
+vim.cmd.nnoremap("q", "<Nop>")
 vim.cmd.colorscheme("onedark")
 vim.api.nvim_set_hl(0, '@lsp.type.comment.cpp', {})
 vim.keymap.set("n", "u", "<Nop>")

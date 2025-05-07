@@ -34,8 +34,6 @@ packer.init({
 return packer.startup(function(use)
 	use ("wbthomason/packer.nvim") -- Have packer manage itself	
 	--nvim-web-devicons
-	-- whichkey
-	use("folke/which-key.nvim")
 	use("nvim-lua/plenary.nvim") -- Lua functions that Telescope plugin use
 	-- use("nvim-telescope/telescope.nvim")
 	use("nvim-treesitter/nvim-treesitter")
