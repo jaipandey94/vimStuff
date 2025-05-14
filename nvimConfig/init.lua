@@ -28,3 +28,16 @@ vim.opt.shellredir = '2>&1 | %%{ "$_" } | Out-File %s; exit $LastExitCode'
 vim.opt.shellpipe = '2>&1 | %%{ "$_" } | tee %s; exit $LastExitCode'
 vim.opt.shellquote = ''
 vim.opt.shellxquote = ''
+
+-- Autocmds
+-- Enable linebreak for markdown files
+vim.api.nvim_create_autocmd({"BufEnter"}, {
+  pattern = "*.md",
+  callback = function()
+    vim.opt_local.linebreak = true  -- Break at words, not mid-word
+    vim.opt_local.breakindent = true  -- Maintain indent on wrapped lines
+    print("Entering a markdown file!")
+  end,
+  group = vim.api.nvim_create_augroup("MarkdownWrap", { clear = true }),
+})
+
