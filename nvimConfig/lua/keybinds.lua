@@ -1,3 +1,4 @@
+
 vim.g.mapleader = " "
 
 -- File navigation
@@ -94,6 +95,4 @@ vim.cmd([[
         cnoreabbrev Qall qall
         ]])
 
--- Terminal Keybinds
-vim.cmd.nnoremap("<leader>tt", "<CMD> botright 10split | startinsert | terminal <CR>") -- Launch Terminal
-vim.cmd.tnoremap("<Esc>", "<C-\\><C-n>") -- Escape from Terminal
+require("terminal")
