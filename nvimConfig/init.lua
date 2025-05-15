@@ -36,7 +36,6 @@ vim.api.nvim_create_autocmd({"BufEnter"}, {
   callback = function()
     vim.opt_local.linebreak = true  -- Break at words, not mid-word
     vim.opt_local.breakindent = true  -- Maintain indent on wrapped lines
-    print("Entering a markdown file!")
   end,
   group = vim.api.nvim_create_augroup("MarkdownWrap", { clear = true }),
 })
