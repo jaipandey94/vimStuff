@@ -39,6 +39,20 @@ vim.keymap.set("n", "<leader>qq", "<CMD>q<CR>")
 vim.keymap.set("n", "<leader>qf", "<CMD>q!<CR>")
 vim.keymap.set("n", "<leader>so", "<CMD>so<CR>")
 
+-- Git Vim Fugitive
+vim.opt.splitbelow = true
+vim.keymap.set("n", "<leader>gww", "<CMD>Gw<CR>")
+vim.keymap.set("n", "<leader>gwf", "<CMD>Gw!<CR>")
+vim.keymap.set("n", "<leader>gaa", "<CMD>G add .<CR>")
+vim.keymap.set("n", "<leader>gs", "<CMD>Git<CR>")
+vim.api.nvim_create_autocmd("User", {
+  pattern = "FugitiveIndex", -- triggers on :Git status
+  callback = function()
+    local height = math.floor(vim.o.lines * 0.15)
+    vim.cmd(height .. "wincmd _") -- set height dynamically
+  end,
+})
+
 -- Marks
 vim.keymap.set("n", "<M-h>", "'h")
 vim.keymap.set("n", "<M-j>", "'j")
