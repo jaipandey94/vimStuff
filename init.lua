@@ -12,6 +12,7 @@ vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 require("lsp-config")
 vim.wo.relativenumber = true
 vim.wo.conceallevel = 1
+vim.opt.laststatus = 3
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 -- vim.cmd("filetype indent plugin off")
